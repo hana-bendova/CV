@@ -16,6 +16,8 @@ body {
   font-family: "Noto Serif", sans-serif;
   text-align: center;
   background-color: var(--neutral);
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
 h1,
@@ -61,7 +63,7 @@ h1 {
 }
 
 section {
-  padding: 70px 0;
+  padding: 4rem 1rem;
 }
 
 #welcome-section {
@@ -273,6 +275,11 @@ section {
 
 }
 
+.summary-box,
+.tile,
+.project-tile {
+  max-width: 100%;
+}
 
 footer {
   border-top: 3px solid var(--primary);
@@ -289,5 +296,47 @@ footer {
   #project .project-tile {
     height: 600px;
     width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #projects .projects {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  #projects .project-tile {
+    height: auto;
+  }
+
+  #projects .project-tile img {
+    height: auto;
+    max-height: 300px;
+  }
+
+  #projects .project-tile p {
+    font-size: 1.25rem;
+    padding: 1rem 0;
+  }
+
+  #contact .social-medias {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .social-media {
+    font-size: 1rem;
+    gap: 0.75rem;
+  }
+
+  #contact h1 {
+    margin-top: 5rem;
+    font-size: 2rem;
   }
 }
