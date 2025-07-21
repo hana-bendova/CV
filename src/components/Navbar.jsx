@@ -8,6 +8,9 @@ const Navbar = () => (
         <a href="#experience">Experience</a>
       </li>
       <li>
+        <a href="#education">Education</a>
+      </li>
+      <li>
         <a href="#skills">Skills</a>
       </li>
       <li>
