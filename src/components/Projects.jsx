@@ -1,10 +1,14 @@
+import mentalImg from '../img/mental_health_app.png';
+import piskvorkyImg from '../img/piskvorky.png';
+import arnicaImg from '../img/Arnica.png';
+
 const Projects = () => (
   <section id="projects">
     <h1>Projects</h1>
     <div className="projects">
       <a href="https://daweb-projekt.netlify.app/" className="project-tile">
         <div className="project-text"></div>
-        <img src="../img/mental_health_app.png" alt="Mental Health App" />
+        <img src={mentalImg} alt="Mental Health App" />
         <p>
           <span>&lt;</span>Mental health tracker<span>/&gt;</span>
         </p>
@@ -15,7 +19,7 @@ const Projects = () => (
         className="project-tile"
       >
         <div className="project-text"></div>
-        <img src="../img/piskvorky.png" alt="Piskvorky" />
+        <img src={piskvorkyImg} alt="Piskvorky" />
         <p>
           <span>&lt;</span>Piškvorky<span>/&gt;</span>
         </p>
@@ -26,7 +30,7 @@ const Projects = () => (
         className="project-tile"
       >
         <div className="project-text"></div>
-        <img src="../img/Arnica.png" alt="Chata Arnica" />
+        <img src={arnicaImg} alt="Chata Arnica" />
         <p>
           <span>&lt;</span>Chata Arnica<span>/&gt;</span>
         </p>
